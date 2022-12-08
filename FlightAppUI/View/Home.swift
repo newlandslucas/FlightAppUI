@@ -15,7 +15,7 @@ struct Home: View {
     var body: some View {
         VStack(spacing: 0) {
             HeaderView()
-            
+            CardsView()
         }
     }
     
@@ -30,6 +30,7 @@ struct Home: View {
             
             HStack {
                 FlightDetailsView(place: "São Paulo", code: "GRU", timing: "8 Dez, 23:22")
+
                 
                 VStack(spacing: 8) {
                     Image(systemName: "chevron.right")
@@ -43,14 +44,29 @@ struct Home: View {
             .padding(.top, 20)
             
             //MARK: Airplane Image View
-            Image("Airplane")
+            Image("Airplane2")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 200)
                 .padding(.bottom, -20)
         }
+        .foregroundColor(.white)
         .padding([.horizontal, .top],15)
         .padding(.top, safeArea.top)
+        .background(Color("ColorBlue"))
+    }
+    
+    
+    //MARK: Credit Cards View
+    @ViewBuilder
+    func CardsView() -> some View {
+        VStack {
+            Text("SELECT PAYMENT METHOD")
+                .font(.caption)
+                .fontWeight(.semibold)
+                .foregroundColor(.gray)
+                .padding(.vertical)
+        }
     }
     
     //MARK: Flight Details
@@ -60,15 +76,16 @@ struct Home: View {
         VStack(alignment: alignment, spacing: 6) {
             Text(place)
                 .font(.caption)
-                .foregroundColor(.black)
+                .foregroundColor(.white)
+
             
             Text(code)
                 .font(.title)
-                .foregroundColor(.black)
-            
+                .foregroundColor(.white)
+
             Text(timing)
                 .font(.caption)
-                .foregroundColor(.black)
+                .foregroundColor(.white)
         }
         .frame(maxWidth: .infinity)
     }

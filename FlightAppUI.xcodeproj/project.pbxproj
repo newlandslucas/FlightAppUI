@@ -12,6 +12,7 @@
 		947119AA2941997400042A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947119A92941997400042A02 /* Assets.xcassets */; };
 		947119AD2941997400042A02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947119AC2941997400042A02 /* Preview Assets.xcassets */; };
 		947119B5294199FC00042A02 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947119B4294199FC00042A02 /* Home.swift */; };
+		947119BC2941A61A00042A02 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947119BB2941A61A00042A02 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		947119A92941997400042A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		947119AC2941997400042A02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		947119B4294199FC00042A02 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		947119BB2941A61A00042A02 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		947119A42941997000042A02 /* FlightAppUI */ = {
 			isa = PBXGroup;
 			children = (
+				947119BA2941A5BC00042A02 /* Model */,
 				947119B3294199E700042A02 /* View */,
 				947119A52941997000042A02 /* FlightAppUIApp.swift */,
 				947119A72941997000042A02 /* ContentView.swift */,
@@ -76,6 +79,14 @@
 				947119B4294199FC00042A02 /* Home.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		947119BA2941A5BC00042A02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				947119BB2941A61A00042A02 /* Card.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 				947119A82941997000042A02 /* ContentView.swift in Sources */,
 				947119B5294199FC00042A02 /* Home.swift in Sources */,
 				947119A62941997000042A02 /* FlightAppUIApp.swift in Sources */,
+				947119BC2941A61A00042A02 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
